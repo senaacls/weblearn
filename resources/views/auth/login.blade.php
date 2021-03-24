@@ -26,10 +26,17 @@
             </div>
 
             <div class="block mt-4">
+            <div class="grid grid-cols-3 gap-4">
                 <label for="remember_me" class="flex items-center">
                     <x-jet-checkbox id="remember_me" name="remember" />
                     <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                 </label>
+                <div class="col-span-2 text-right"> <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
+                        {{ __('Registration here') }}
+                    </a></div>
+
+            </div>
+                
             </div>
 
             <div class="flex items-center justify-end mt-4">
